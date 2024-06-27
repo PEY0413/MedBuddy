@@ -1,0 +1,21 @@
+<launch>
+
+    <!-- Launch USB camera node -->
+    <include file="$(find usb_cam)/launch/usb_cam-test.launch"/>
+
+    <!-- Launch face detection node with remapping -->
+    <include file="$(find opencv_apps)/launch/face_detection.launch">
+        <arg name="image" value="/usb_cam/image_raw"/>  <!-- Remap image topic to usb_cam -->
+    </include>
+
+    <!-- Run take photo script -->
+    <node pkg="rchomeedu_vision" type="take_photo_sub.py" name="take_photo_sub" output="screen"/>
+
+    <!-- Run Google speech recognition script -->
+    <node pkg="rchomeedu_speech" type="google_sr.py" name="result" output="screen"/>
+
+    <!-- Run med buddy script -->
+    <node pkg="med_buddy" type="med_buddy.py" name="med_buddy" output="screen"/>
+
+</launch>
+
