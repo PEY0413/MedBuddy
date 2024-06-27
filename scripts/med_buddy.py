@@ -4,7 +4,6 @@
 	To run this script, you need to run the below lines in the terminal:
 	-$ roslaunch usb_cam usb_cam-test.launch
 	-$ roslaunch opencv_apps face_detection.launch image:=/usb_cam/image_raw
-	-$ rosrun rchomeedu_vision take_photo_sub.py
 	-$ rosrun rchomeedu_speech google_sr.py
 	-$ rosrun med_buddy med_buddy.py
 
@@ -14,7 +13,6 @@
 """
 
 import rospy
-from sound_play.libsoundplay import SoundClient
 from opencv_apps.msg import FaceArrayStamped
 from std_msgs.msg import String
 from gtts import gTTS
