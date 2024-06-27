@@ -1,5 +1,5 @@
 # MedBuddy
-MedBuddy is a health buddy robot system that is able to predict your disease based on described symptoms and provide prescription and medical advice. It uses Natural Language Processing techniques to understand your input (symptoms) and match against the answer in the system (disease, prescription and medical advice).
+MedBuddy is a health buddy robot system that is able to predict your disease based on described symptoms and provide prescription and medical advice. It uses Natural Language Processing techniques to understand your input (symptoms) and match against the answer in the system (disease, prescription and medical advice). This project was developed by six of us: Beh Sin Yee, Christina Ku Pei San, Lee Keat En, Phuah En Yi, Soo Jin Xue, and Tee Yee Taung. Below are the codes used for environment setup and installation.
 
 ## ROS Configuration
 1. Installation of ROS Melodic on Ubuntu 18.04
