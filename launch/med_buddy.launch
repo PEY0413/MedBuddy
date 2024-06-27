@@ -8,9 +8,6 @@
         <arg name="image" value="/usb_cam/image_raw"/>  <!-- Remap image topic to usb_cam -->
     </include>
 
-    <!-- Run take photo script -->
-    <node pkg="rchomeedu_vision" type="take_photo_sub.py" name="take_photo_sub" output="screen"/>
-
     <!-- Run Google speech recognition script -->
     <node pkg="rchomeedu_speech" type="google_sr.py" name="result" output="screen"/>
 
