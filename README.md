@@ -31,7 +31,7 @@ $ git clone https://github.com/PEY0413/med_buddy.git
 ```
 2. Install dependencies
 ```
-$ pip install -r requirements.txt
+$ pip install -r med_buddy/requirements.txt
 ```
 3. Build catkin workspace
 ```
